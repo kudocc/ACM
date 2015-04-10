@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27B978701A806CF800AD1BEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9786F1A806CF800AD1BEE /* main.m */; };
+		27AA44351ACA7EE700731289 /* heapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AA44331ACA7EE700731289 /* heapSort.c */; };
+		27B55B3B1AD7A34100F3D68F /* breadthFirstSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */; };
+		27C4D9BB1ACC1FC200EA6B18 /* priorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */; };
+		27C4D9BE1ACC207300EA6B18 /* poj1088.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4D9BD1ACC207300EA6B18 /* poj1088.cpp */; };
+		27C726E11AD4D54D00FBF1D8 /* poj1636.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C726E01AD4D54D00FBF1D8 /* poj1636.cpp */; };
+		27FB87BF1ACB7D0B0066B5C3 /* poj1019.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27FB87BD1ACB7D0B0066B5C3 /* poj1019.cpp */; };
+		27FB87C01ACB7D0B0066B5C3 /* poj1125.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27FB87BE1ACB7D0B0066B5C3 /* poj1125.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27AA44331ACA7EE700731289 /* heapSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heapSort.c; sourceTree = "<group>"; };
+		27AA44341ACA7EE700731289 /* heapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heapSort.h; sourceTree = "<group>"; };
+		27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = breadthFirstSearch.cpp; sourceTree = "<group>"; };
 		27B9786C1A806CF800AD1BEE /* console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = console; sourceTree = BUILT_PRODUCTS_DIR; };
-		27B9786F1A806CF800AD1BEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = priorityQueue.cpp; sourceTree = "<group>"; };
+		27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priorityQueue.h; sourceTree = "<group>"; };
+		27C4D9BC1ACC201200EA6B18 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		27C4D9BD1ACC207300EA6B18 /* poj1088.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poj1088.cpp; sourceTree = "<group>"; };
+		27C726E01AD4D54D00FBF1D8 /* poj1636.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poj1636.cpp; sourceTree = "<group>"; };
+		27FB87BD1ACB7D0B0066B5C3 /* poj1019.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poj1019.cpp; sourceTree = "<group>"; };
+		27FB87BE1ACB7D0B0066B5C3 /* poj1125.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poj1125.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +72,16 @@
 		27B9786E1A806CF800AD1BEE /* console */ = {
 			isa = PBXGroup;
 			children = (
-				27B9786F1A806CF800AD1BEE /* main.m */,
+				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
+				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
+				27C4D9BD1ACC207300EA6B18 /* poj1088.cpp */,
+				27FB87BD1ACB7D0B0066B5C3 /* poj1019.cpp */,
+				27FB87BE1ACB7D0B0066B5C3 /* poj1125.cpp */,
+				27C726E01AD4D54D00FBF1D8 /* poj1636.cpp */,
+				27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */,
+				27AA44341ACA7EE700731289 /* heapSort.h */,
+				27AA44331ACA7EE700731289 /* heapSort.c */,
+				27C4D9BC1ACC201200EA6B18 /* common.h */,
 			);
 			path = console;
 			sourceTree = "<group>";
@@ -72,6 +96,7 @@
 				27B978681A806CF800AD1BEE /* Sources */,
 				27B978691A806CF800AD1BEE /* Frameworks */,
 				27B9786A1A806CF800AD1BEE /* CopyFiles */,
+				27B978791A806DA700AD1BEE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -113,12 +138,34 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27B978791A806DA700AD1BEE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rf $BUILT_PRODUCTS_DIR/$EXECUTABLE_FOLDER_PATH ~/Desktop/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27B978681A806CF800AD1BEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B978701A806CF800AD1BEE /* main.m in Sources */,
+				27FB87BF1ACB7D0B0066B5C3 /* poj1019.cpp in Sources */,
+				27AA44351ACA7EE700731289 /* heapSort.c in Sources */,
+				27FB87C01ACB7D0B0066B5C3 /* poj1125.cpp in Sources */,
+				27C726E11AD4D54D00FBF1D8 /* poj1636.cpp in Sources */,
+				27C4D9BE1ACC207300EA6B18 /* poj1088.cpp in Sources */,
+				27C4D9BB1ACC1FC200EA6B18 /* priorityQueue.cpp in Sources */,
+				27B55B3B1AD7A34100F3D68F /* breadthFirstSearch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +249,7 @@
 		27B978741A806CF800AD1BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -232,6 +280,7 @@
 				27B978751A806CF800AD1BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
