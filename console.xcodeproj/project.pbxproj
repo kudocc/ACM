@@ -56,6 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27B55B3F1AD7B99800F3D68F /* basic algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
+				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
+				27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */,
+				27AA44341ACA7EE700731289 /* heapSort.h */,
+				27AA44331ACA7EE700731289 /* heapSort.c */,
+				27B55B3D1AD7AF4700F3D68F /* quickSort.h */,
+				27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */,
+			);
+			name = "basic algorithm";
+			sourceTree = "<group>";
+		};
 		27B978631A806CF800AD1BEE = {
 			isa = PBXGroup;
 			children = (
@@ -75,17 +89,11 @@
 		27B9786E1A806CF800AD1BEE /* console */ = {
 			isa = PBXGroup;
 			children = (
-				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
-				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
+				27B55B3F1AD7B99800F3D68F /* basic algorithm */,
 				27C4D9BD1ACC207300EA6B18 /* poj1088.cpp */,
 				27FB87BD1ACB7D0B0066B5C3 /* poj1019.cpp */,
 				27FB87BE1ACB7D0B0066B5C3 /* poj1125.cpp */,
 				27C726E01AD4D54D00FBF1D8 /* poj1636.cpp */,
-				27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */,
-				27AA44341ACA7EE700731289 /* heapSort.h */,
-				27AA44331ACA7EE700731289 /* heapSort.c */,
-				27B55B3D1AD7AF4700F3D68F /* quickSort.h */,
-				27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */,
 				27C4D9BC1ACC201200EA6B18 /* common.h */,
 			);
 			path = console;
