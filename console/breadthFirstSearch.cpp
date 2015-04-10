@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <vector>
 #include <deque>
+#include "quickSort.h"
 
 typedef enum {
     StateOfVertexWhite, // 没有被访问过
@@ -18,7 +19,7 @@ typedef enum {
 
 const int MaxVertexCount = 100 ;
 
-int main()
+int mainFunc()
 {
     // 每个点对应的状态
     int state[MaxVertexCount] ;
