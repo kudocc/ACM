@@ -39,7 +39,7 @@ int work()
     Clear(vis,0);
     Clear(mark,0);
     Clear(dp,0);
-    printf("%d", sizeof(dp)) ;
+    printf("%lu", sizeof(dp)) ;
     Clear(wx,0);
     Clear(wy,0);
     scanf("%d%d",&m,&e);
@@ -74,11 +74,11 @@ int work()
     return 0;
 }
 
-//int main()
-//{
-//    int t;
-//    
-//    scanf("%d",&t);
-//    while(t--) work();
-//    return 0;
-//}
+int mainPOJ1636()
+{
+    int t;
+    
+    scanf("%d",&t);
+    while(t--) work();
+    return 0;
+}

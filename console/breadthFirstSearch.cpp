@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <vector>
 #include <deque>
-#include "quickSort.h"
+#include "adjacencyList.h"
 
 typedef enum {
     StateOfVertexWhite, // 没有被访问过
@@ -19,25 +19,23 @@ typedef enum {
 
 const int MaxVertexCount = 100 ;
 
+/*
+ test case:
+ 5
+ 2 1 2
+ 1 4
+ 2 3 4
+ 1 0
+ 0
+ */
+
 int mainFunc()
 {
     // 每个点对应的状态
     int state[MaxVertexCount] ;
     // 邻接表
-    std::vector<std::vector<int>*> vector ;
-    int vertexCount = 0 ;
-    scanf("%d", &vertexCount) ;
-    for (int i = 0 ; i < vertexCount; ++i) {
-        int neighborCount = 0 ;
-        std::vector<int> *list = new std::vector<int>() ;
-        scanf("%d", &neighborCount) ;
-        for (int j = 0; j < neighborCount; ++j) {
-            int neighbor = 0 ;
-            scanf("%d", &neighbor) ;
-            list->push_back(neighbor) ;
-        }
-        vector.push_back(list) ;
-    }
+    std::vector<std::vector<int>*>* vector = constructGraphFromStandardInput() ;
+    int vertexCount = (int)vector->size() ;
     printf("bfs begin\n") ;
     for (int i = 0; i < vertexCount; ++i) {
         state[i] = StateOfVertexWhite ;
@@ -48,7 +46,7 @@ int mainFunc()
     while (queue.size() > 0) {
         int index = queue.front() ;
         queue.pop_front() ;
-        std::vector<int> *list = vector[index] ;
+        std::vector<int> *list = (*vector)[index] ;
         for (int i = 0; i < list->size(); ++i) {
             int neighbor = (*list)[i] ;
             if (state[neighbor] == StateOfVertexWhite) {
@@ -60,10 +58,7 @@ int mainFunc()
         state[index] = StateOfVertexBlack ;
     }
     printf("bfs end\n") ;
+    freeGraph(vector) ;
     
-    for (int i = 0; i < vector.size(); ++i) {
-        std::vector<int> *list = vector[i] ;
-        delete list ;
-    }
     return 0 ;
 }

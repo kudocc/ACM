@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A3E6EF1ADB692100455437 /* deepFirstSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A3E6EE1ADB692100455437 /* deepFirstSearch.cpp */; };
+		27A3E6F21ADB6C0500455437 /* adjacencyList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A3E6F01ADB6C0500455437 /* adjacencyList.cpp */; };
+		27A3E6F51ADB901C00455437 /* MinimumSpanningTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A3E6F41ADB901C00455437 /* MinimumSpanningTree.cpp */; };
+		27A3E6F81ADBA44100455437 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A3E6F61ADBA44100455437 /* BinarySearchTree.cpp */; };
 		27AA44351ACA7EE700731289 /* heapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AA44331ACA7EE700731289 /* heapSort.c */; };
+		27AAD3111AE3DB9D008FC969 /* mergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD30F1AE3DB9D008FC969 /* mergeSort.cpp */; };
 		27B55B3B1AD7A34100F3D68F /* breadthFirstSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */; };
 		27B55B3E1AD7AF4700F3D68F /* quickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */; };
 		27C4D9BB1ACC1FC200EA6B18 /* priorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */; };
@@ -30,8 +35,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27A3E6EE1ADB692100455437 /* deepFirstSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deepFirstSearch.cpp; sourceTree = "<group>"; };
+		27A3E6F01ADB6C0500455437 /* adjacencyList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adjacencyList.cpp; sourceTree = "<group>"; };
+		27A3E6F11ADB6C0500455437 /* adjacencyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adjacencyList.h; sourceTree = "<group>"; };
+		27A3E6F41ADB901C00455437 /* MinimumSpanningTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinimumSpanningTree.cpp; sourceTree = "<group>"; };
+		27A3E6F61ADBA44100455437 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
+		27A3E6F71ADBA44100455437 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
 		27AA44331ACA7EE700731289 /* heapSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heapSort.c; sourceTree = "<group>"; };
 		27AA44341ACA7EE700731289 /* heapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heapSort.h; sourceTree = "<group>"; };
+		27AAD30F1AE3DB9D008FC969 /* mergeSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mergeSort.cpp; sourceTree = "<group>"; };
+		27AAD3101AE3DB9D008FC969 /* mergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mergeSort.h; sourceTree = "<group>"; };
 		27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = breadthFirstSearch.cpp; sourceTree = "<group>"; };
 		27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quickSort.cpp; sourceTree = "<group>"; };
 		27B55B3D1AD7AF4700F3D68F /* quickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
@@ -56,16 +69,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A3E6F31ADB6C0F00455437 /* graph */ = {
+			isa = PBXGroup;
+			children = (
+				27A3E6F11ADB6C0500455437 /* adjacencyList.h */,
+				27A3E6F01ADB6C0500455437 /* adjacencyList.cpp */,
+				27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */,
+				27A3E6EE1ADB692100455437 /* deepFirstSearch.cpp */,
+				27A3E6F41ADB901C00455437 /* MinimumSpanningTree.cpp */,
+			);
+			name = graph;
+			sourceTree = "<group>";
+		};
 		27B55B3F1AD7B99800F3D68F /* basic algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				27A3E6F71ADBA44100455437 /* BinarySearchTree.h */,
+				27A3E6F61ADBA44100455437 /* BinarySearchTree.cpp */,
+				27A3E6F31ADB6C0F00455437 /* graph */,
 				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
 				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
-				27B55B3A1AD7A34100F3D68F /* breadthFirstSearch.cpp */,
 				27AA44341ACA7EE700731289 /* heapSort.h */,
 				27AA44331ACA7EE700731289 /* heapSort.c */,
 				27B55B3D1AD7AF4700F3D68F /* quickSort.h */,
 				27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */,
+				27AAD3101AE3DB9D008FC969 /* mergeSort.h */,
+				27AAD30F1AE3DB9D008FC969 /* mergeSort.cpp */,
 			);
 			name = "basic algorithm";
 			sourceTree = "<group>";
@@ -172,14 +201,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A3E6F81ADBA44100455437 /* BinarySearchTree.cpp in Sources */,
 				27FB87BF1ACB7D0B0066B5C3 /* poj1019.cpp in Sources */,
 				27AA44351ACA7EE700731289 /* heapSort.c in Sources */,
+				27AAD3111AE3DB9D008FC969 /* mergeSort.cpp in Sources */,
+				27A3E6EF1ADB692100455437 /* deepFirstSearch.cpp in Sources */,
 				27FB87C01ACB7D0B0066B5C3 /* poj1125.cpp in Sources */,
+				27A3E6F21ADB6C0500455437 /* adjacencyList.cpp in Sources */,
 				27B55B3E1AD7AF4700F3D68F /* quickSort.cpp in Sources */,
 				27C726E11AD4D54D00FBF1D8 /* poj1636.cpp in Sources */,
 				27C4D9BE1ACC207300EA6B18 /* poj1088.cpp in Sources */,
 				27C4D9BB1ACC1FC200EA6B18 /* priorityQueue.cpp in Sources */,
 				27B55B3B1AD7A34100F3D68F /* breadthFirstSearch.cpp in Sources */,
+				27A3E6F51ADB901C00455437 /* MinimumSpanningTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

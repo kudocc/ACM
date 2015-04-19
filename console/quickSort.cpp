@@ -62,7 +62,7 @@ void queueSortSwap(int i, int j, int *array)
 }
 
 static const int MaxArraySize = 100 ;
-int main()
+int mainQuickSort()
 {
     srand(time(NULL)) ;
     int array[MaxArraySize] ;
@@ -74,4 +74,5 @@ int main()
         printf("%d ", array[i]) ;
     }
     printf("\n") ;
+    return 0 ;
 }

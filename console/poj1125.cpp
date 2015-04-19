@@ -5,7 +5,7 @@
 
 using namespace std ;
 
-int mainFun()
+int mainPOJ1125()
 {
     int graph[101][101] ;
     while (1) {
