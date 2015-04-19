@@ -81,20 +81,28 @@
 			name = graph;
 			sourceTree = "<group>";
 		};
-		27B55B3F1AD7B99800F3D68F /* basic algorithm */ = {
+		27AAD3121AE3E230008FC969 /* sort */ = {
 			isa = PBXGroup;
 			children = (
-				27A3E6F71ADBA44100455437 /* BinarySearchTree.h */,
-				27A3E6F61ADBA44100455437 /* BinarySearchTree.cpp */,
-				27A3E6F31ADB6C0F00455437 /* graph */,
-				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
-				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
 				27AA44341ACA7EE700731289 /* heapSort.h */,
 				27AA44331ACA7EE700731289 /* heapSort.c */,
 				27B55B3D1AD7AF4700F3D68F /* quickSort.h */,
 				27B55B3C1AD7AF4700F3D68F /* quickSort.cpp */,
 				27AAD3101AE3DB9D008FC969 /* mergeSort.h */,
 				27AAD30F1AE3DB9D008FC969 /* mergeSort.cpp */,
+			);
+			name = sort;
+			sourceTree = "<group>";
+		};
+		27B55B3F1AD7B99800F3D68F /* basic algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				27AAD3121AE3E230008FC969 /* sort */,
+				27A3E6F31ADB6C0F00455437 /* graph */,
+				27A3E6F71ADBA44100455437 /* BinarySearchTree.h */,
+				27A3E6F61ADBA44100455437 /* BinarySearchTree.cpp */,
+				27C4D9BA1ACC1FC200EA6B18 /* priorityQueue.h */,
+				27C4D9B91ACC1FC200EA6B18 /* priorityQueue.cpp */,
 			);
 			name = "basic algorithm";
 			sourceTree = "<group>";
